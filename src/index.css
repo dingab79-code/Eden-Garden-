@@ -14,6 +14,19 @@
   --color-brand-editorial-border: #E5E1D8;
 }
 
+@keyframes scroll-x {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll-x {
+  animation: scroll-x 40s linear infinite;
+}
+
+.transition-active {
+  @apply active:scale-95 transition-transform;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
